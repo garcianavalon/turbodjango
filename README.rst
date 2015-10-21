@@ -17,14 +17,12 @@ Up the box and login
     $vagrant ssh
 
 Python deps
-
 ::
     $cd /vagrant
     $mk virtualenv your_project_venv_name
     $pip install -r requirements.txt
 
 PostgreSQL Database
-
 ::
     $sudo su - postgres
     $createdb your_project_db_name
@@ -35,12 +33,10 @@ PostgreSQL Database
     $exit
 
 Migrations
-
 :: 
     $python manage.py migrate
 
 Run your website
-
 ::
     $python manage.py runserver 0.0.0.0:8000
 
